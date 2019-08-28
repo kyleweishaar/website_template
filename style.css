@@ -18,6 +18,8 @@ a {
 /* Generic styles */
 html {
   scroll-behavior: smooth;
+  padding:0;
+  margin:0;
 }
 
 a {
@@ -128,4 +130,24 @@ footer {
   color: white;
   text-align: center;
   font-size: 0.75rem;
+}
+
+/* page 1 style */
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+  grid-gap:3rem;
+}
+
+.item {
+  max-height:100%;
+  max-width:100%;
+  background:blue;
+
+  /*grid*/
+  grid-column-start:1;
+  grid-column-end:4;
+  grid-row-start:1;
+  grid-row-end:span 2;
 }
